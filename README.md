@@ -23,10 +23,17 @@ problems, and please report what you find.
 
 ## Install
 
-1. Build it (see [Build](#build)) or take a release build.
-2. Create the folder `%APPDATA%\XMouse\config\plugins\psnbridge\`.
-3. Copy `xmouse-psnbridge.exe` and `plugin.json` into it.
-4. Start XMouse. "PSN Bridge" appears as a plugin with the platform "PlayStation".
+**The easy way:** in XMouse, choose PlayStation on the "Which console do you play?" screen and
+click **Install PSNBridge** (or More > Plugins > PSNBridge). XMouse downloads the latest release
+from this repository and installs it.
+
+**By hand:**
+
+1. Download `xmouse-psnbridge.zip` from the latest release (or build it, see [Build](#build)).
+2. In XMouse, open More > Plugins folder (that is `%APPDATA%\XMouse\config\plugins`).
+3. Extract the zip there, so you get `plugins\psnbridge\plugin.json` and
+   `plugins\psnbridge\xmouse-psnbridge.exe`.
+4. Restart XMouse. PlayStation can now be chosen as your console.
 
 The folder must be called `psnbridge` (XMouse requires the folder name to match the plugin
 ID). The plugin keeps its own files in `psnbridge\data\`.
@@ -122,6 +129,10 @@ Windows, with the Rust MSVC toolchain:
 cargo +stable-x86_64-pc-windows-msvc build --release
 cargo +stable-x86_64-pc-windows-msvc test
 ```
+
+To make the release zip XMouse installs from, run `.\tools\package.ps1`: it builds the release
+program and writes `dist\xmouse-psnbridge.zip` with a `psnbridge` folder holding the program,
+`plugin.json`, `LICENSE` and this README. Attach it to a GitHub release under exactly that name.
 
 The program is `target\release\xmouse-psnbridge.exe`. `xmouse-psnbridge --self-test` runs a
 short built-in check (no network or console needed). The tests and the self-test never open

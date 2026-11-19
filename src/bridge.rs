@@ -9,7 +9,7 @@ use crate::out::Out;
 use crate::proto::{self, FrameError, FromPlugin, ToPlugin};
 use crate::session::{self, Command, StartRequest};
 
-pub const PLUGIN_NAME: &str = "PSN Bridge";
+pub const PLUGIN_NAME: &str = "PSNBridge";
 
 /// Serve XMouse until it says `stop` or closes the pipe. `input` is stdin in real use.
 ///
@@ -155,7 +155,7 @@ mod tests {
         let messages = converse(input).messages();
         assert_eq!(
             messages,
-            [json!({ "type": "hello", "name": "PSN Bridge", "version": env!("CARGO_PKG_VERSION"),
+            [json!({ "type": "hello", "name": "PSNBridge", "version": env!("CARGO_PKG_VERSION"),
                      "api": 1, "capabilities": ["pairing", "wake", "rumble"] })]
         );
     }

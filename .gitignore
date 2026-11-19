@@ -5,3 +5,6 @@ target/
 # The README is the only Markdown file in this repository.
 *.md
 !README.md
+
+# Release zip (made by tools\package.ps1)
+dist/

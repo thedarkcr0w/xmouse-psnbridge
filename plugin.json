@@ -1,6 +1,6 @@
 {
   "id": "psnbridge",
-  "name": "PSN Bridge",
+  "name": "PSNBridge",
   "version": "0.1.0",
   "platform": "PlayStation",
   "executable": "xmouse-psnbridge",

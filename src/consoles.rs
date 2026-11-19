@@ -259,7 +259,7 @@ pub fn account_for_pairing(
         None => store.account().map(|id| (id, false)).ok_or_else(|| {
             "No PSN account ID is set. Pairing needs the ID of the PlayStation account that is \
              signed in on the console. Set it once with: xmouse-psnbridge --set-account <id> \
-             (see the PSN Bridge README for how to find it)."
+             (see the PSNBridge README for how to find it)."
                 .to_string()
         }),
     }
