@@ -1,0 +1,11 @@
+{
+  "id": "psnbridge",
+  "name": "PSN Bridge",
+  "version": "0.1.0",
+  "platform": "PlayStation",
+  "executable": "xmouse-psnbridge",
+  "args": [],
+  "api": 1,
+  "license": "AGPL-3.0-only",
+  "source": "https://github.com/thedarkcr0w/xmouse-psnbridge"
+}

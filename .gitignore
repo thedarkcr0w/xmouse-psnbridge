@@ -1,0 +1,7 @@
+# Build output
+target/
+*.exe
+
+# The README is the only Markdown file in this repository.
+*.md
+!README.md
