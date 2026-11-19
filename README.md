@@ -23,7 +23,7 @@ problems, and please report what you find.
 
 ## Install
 
-**The easy way:** in XMouse, choose PlayStation on the "Which console do you play?" screen and
+**The easy way:** in XMouse, choose PlayStation on the "Which console do you play on?" screen and
 click **Install PSNBridge** (or More > Plugins > PSNBridge). XMouse downloads the latest release
 from this repository and installs it.
 
